@@ -48,7 +48,7 @@
             this.squonkCage.Location = new System.Drawing.Point(529, 83);
             this.squonkCage.Name = "squonkCage";
             this.squonkCage.Size = new System.Drawing.Size(576, 536);
-            this.squonkCage.TabIndex = 0;
+            this.squonkCage.TabIndex = 9;
             this.squonkCage.TabStop = false;
             // 
             // gameTitle
@@ -59,7 +59,7 @@
             this.gameTitle.Location = new System.Drawing.Point(63, 138);
             this.gameTitle.Name = "gameTitle";
             this.gameTitle.Size = new System.Drawing.Size(522, 92);
-            this.gameTitle.TabIndex = 1;
+            this.gameTitle.TabIndex = 9;
             this.gameTitle.Text = "Squonk Rescue";
             // 
             // playBtn
@@ -69,7 +69,7 @@
             this.playBtn.Location = new System.Drawing.Point(152, 269);
             this.playBtn.Name = "playBtn";
             this.playBtn.Size = new System.Drawing.Size(223, 97);
-            this.playBtn.TabIndex = 2;
+            this.playBtn.TabIndex = 1;
             this.playBtn.Text = "Play Game";
             this.playBtn.UseVisualStyleBackColor = false;
             this.playBtn.Click += new System.EventHandler(this.playBtn_Click);
@@ -81,7 +81,7 @@
             this.quitBtn.Location = new System.Drawing.Point(152, 506);
             this.quitBtn.Name = "quitBtn";
             this.quitBtn.Size = new System.Drawing.Size(223, 95);
-            this.quitBtn.TabIndex = 4;
+            this.quitBtn.TabIndex = 3;
             this.quitBtn.Text = "Exit Game";
             this.quitBtn.UseVisualStyleBackColor = false;
             this.quitBtn.Click += new System.EventHandler(this.quitBtn_Click);
@@ -93,7 +93,7 @@
             this.helpBtn.Location = new System.Drawing.Point(152, 389);
             this.helpBtn.Name = "helpBtn";
             this.helpBtn.Size = new System.Drawing.Size(223, 95);
-            this.helpBtn.TabIndex = 3;
+            this.helpBtn.TabIndex = 2;
             this.helpBtn.Text = "Help";
             this.helpBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.helpBtn.UseVisualStyleBackColor = false;
@@ -105,7 +105,7 @@
             this.skipBtn.Location = new System.Drawing.Point(1006, 625);
             this.skipBtn.Name = "skipBtn";
             this.skipBtn.Size = new System.Drawing.Size(138, 70);
-            this.skipBtn.TabIndex = 6;
+            this.skipBtn.TabIndex = 0;
             this.skipBtn.Text = "Skip";
             this.skipBtn.UseVisualStyleBackColor = true;
             this.skipBtn.Click += new System.EventHandler(this.skipBtn_Click);
@@ -118,7 +118,7 @@
             this.cutscene.Name = "cutscene";
             this.cutscene.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("cutscene.OcxState")));
             this.cutscene.Size = new System.Drawing.Size(1237, 782);
-            this.cutscene.TabIndex = 5;
+            this.cutscene.TabIndex = 9;
             this.cutscene.PlayStateChange += new AxWMPLib._WMPOCXEvents_PlayStateChangeEventHandler(this.cutscene_PlayStateChange);
             // 
             // FrmMenu
