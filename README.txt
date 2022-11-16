@@ -1,5 +1,7 @@
 Documentation for Team Squonk Fall 2022 Project
 
+CORI ALBRITTON
+
 FrmMenu.cs
     - The FrmMenu.cs file adds the new main menu for the game. It plays a cutscene first before showing the actual menu.
 
@@ -79,3 +81,86 @@ FrmHelp.cs
     METHODS
     1) closeBtn_Click(object sender, EventArgs e)
         - Triggers when the closeBtn on the help screen is clicked. Simply closes the help screen.
+
+COREY BELK-SCROGGINS
+
+FrmLevel.cs
+    
+    METHODS
+    1) StopMusic()
+        - Globally controls stopping the music for the main level audio.
+
+    2) StartMusic()
+        - Globally controls playing the music for the main level audio.
+
+    3) PauseGame()
+        - Responsible for creating and showing the new Windows Form that pauses all process related to gameplay.
+
+    4) OnKeyUp(KeyEventArgs e)
+        - Overrides the built-in KeyEventUp method to raise an event every time a key on the Keyboard is released.
+        - Changes Character Class position array to simulate which direction is triggered.
+        - e.x. Press left changes position[4] to 1, and all other indecies (5,6,7) to 0.
+
+    5) OnKeyDown(KeyEventArgs e)
+        - Overrides the built-in KeyEventDown method to raise an event every time a key on the Keyboard is pressed.
+        - Changes Character Class position array to simulate which direction is triggered.
+        - e.x. Release left changes position[0] to 1, and all other indecies (1,2,3) to 0.
+
+    6) ReturnKeyDownInt()
+        - Returns 0 or 1 to check which arrow key has been pressed.
+        - e.x. Left key is pressed then l is set to 1.
+        - e.x. No key is pressed then return 0.
+
+    7) ReturnKeyDownInt()
+        - Returns 0 or 1 to check which arrow key has been released.
+        - e.x. Left key is released then l is set to 1.
+        - e.x. No key is released then return 0.
+
+    8) UpdateKeyValues(object source, System.Timers.ElapsedEventArgs e)
+        - Globally sets 8 key press variables to the values corresponding to each 4 cardinal directions.
+        - e.x. Right key is tapped then RightKeyDown and RightKeyUp equals 1.
+
+    9) ResetKeyValues()
+        - Resets the values after each KeyEventArg.
+
+    10) FrmLevel_KeyDown(object sender, KeyEventArgs e)
+        - Determines if user presses the letter 'p' on the keyboard to pause the game.
+        - Determines if user presses the Ctrl key on the keyboard to shrink the player.
+            - Determines which character was selected and adjusts their stats after shrunken.
+        - Contains a timer called clock that updates the level at 60 frames per second.
+        - Sends the triggered key data to Character Class to execute movement of the player
+
+Character.cs
+
+    METHODS
+    1) CharacterSelectedSpeed(int s)
+        - Sets the speed of the player based on the character selected.
+
+    2) KeysPressed(KeyEventArgs e, int up_key_down, int left_key_down, int down_key_down, int right_key_down, int up_key_up, int left_key_up, int down_key_up, int right_key_up)
+        - Takes the key data from FrmLevel_KeyDown and determines which direction the player should move in.
+        - Uses original arrow key value to perform the first movement then compares position array values.
+        - e.x If left key and position[0] is 1, move player left and up.
+        - If no data was passed then reset move speed vector to 0.
+
+FrmPause.cs
+    
+    - New Windows Form used to pause the game.
+
+    METHODS
+    1) Resume_Click(object sender, EventArgs e)
+        - Closes form.
+        - Sets pausedTime variable to false.
+        - Starts the FrmLevel music again.
+
+    2) Restart_Click(object sender, EventArgs e)
+        - Creates new FrmMenu form
+        - Closes current FrmLevel instance
+        - Shows new FrmMenu form
+        - Closes Pause form
+
+    3) Quit_Click(object sender, EventArgs e)
+        - Exits the application
+
+    4) help_button_Click(object sender, EventArgs e)
+        - Creates a new FrmHelp form
+        - Shows the new FrmHelp form
