@@ -182,3 +182,17 @@ FrmPause.cs
     
     2) quitBtn_Click(object sender, EventArgs e)
         - Triggers when the quitBtn on the death screen is clicked. This closes the entire application
+        
+        
+Seonghoon Yi
+
+FrmLevel.cs
+    - Added time limit that starts autumatically after opening FrmLevel.cs
+    - Adjusted enemies' health so that the game is balanced overally.
+    - Added an NPC, squonk that is the trophy of player after defeating the boss enemy.
+
+FrmWin.cs
+    - I built this to use as a winning screen once the player collide with the squonk.
+    - I made the winning music(made by Corey) auto-played with opening this file. 
+   
+
