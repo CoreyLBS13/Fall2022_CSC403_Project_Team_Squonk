@@ -67,34 +67,34 @@ namespace Fall2020_CSC403_Project.code
             if (keyPressed == stockLeftKey)
             {
                 MoveSpeed = new Vector2(-characterSpeed, 0);
-                if (e.KeyCode == Keys.Left && charPosition[0] == 1) // Left and Up
+                /*if (e.KeyCode == Keys.Left && charPosition[0] == 1) // Left and Up
                     MoveSpeed = new Vector2(-characterSpeed,-characterSpeed);
                 else if (e.KeyCode == Keys.Left && charPosition[2] == 1) // Left and Down
-                    MoveSpeed = new Vector2(-characterSpeed,characterSpeed);
+                    MoveSpeed = new Vector2(-characterSpeed,characterSpeed);*/
             }
             else if (keyPressed == stockRightKey)
             {
                 MoveSpeed = new Vector2(characterSpeed, 0);
-                if (e.KeyCode == Keys.Right && charPosition[0] == 1) // Right and Up
+                /*if (e.KeyCode == Keys.Right && charPosition[0] == 1) // Right and Up
                     MoveSpeed = new Vector2(characterSpeed, -characterSpeed);
                 else if (e.KeyCode == Keys.Right && charPosition[2] == 1) // Right and Down
-                    MoveSpeed = new Vector2(characterSpeed, characterSpeed);
+                    MoveSpeed = new Vector2(characterSpeed, characterSpeed);*/
             }
             else if (keyPressed == stockUpKey)
             {
                 MoveSpeed = new Vector2(0,-characterSpeed);
-                if (e.KeyCode == Keys.Up && charPosition[1] == 1) // Up and Left
+                /*if (e.KeyCode == Keys.Up && charPosition[1] == 1) // Up and Left
                     MoveSpeed = new Vector2(-characterSpeed, -characterSpeed);
                 else if (e.KeyCode == Keys.Up && charPosition[3] == 1) // Up and Right
-                    MoveSpeed = new Vector2(characterSpeed, -characterSpeed);
+                    MoveSpeed = new Vector2(characterSpeed, -characterSpeed);*/
             }
             else if (keyPressed == stockDownKey)
             {
                 MoveSpeed = new Vector2(0,characterSpeed);
-                if (e.KeyCode == Keys.Down && charPosition[1] == 1) // Down and Left
+                /*if (e.KeyCode == Keys.Down && charPosition[1] == 1) // Down and Left
                     MoveSpeed = new Vector2(-characterSpeed, characterSpeed);
                 else if (e.KeyCode == Keys.Down && charPosition[3] == 1) // Down and Right
-                    MoveSpeed = new Vector2(characterSpeed, characterSpeed);
+                    MoveSpeed = new Vector2(characterSpeed, characterSpeed);*/
             }
             else
             {
