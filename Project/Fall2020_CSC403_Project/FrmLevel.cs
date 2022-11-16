@@ -108,8 +108,8 @@ namespace Fall2020_CSC403_Project {
             player = new Player(CreatePosition(picPlayer), CreateCollider(picPlayer, PADDING), character);
             
             bossKoolaid = new Enemy(CreatePosition(picBossKoolAid), CreateCollider(picBossKoolAid, PADDING));
-            //changed bossKoolaid.health 50 from default(30)
-            bossKoolaid.Health = 50;
+            //changed bossKoolaid.health 100 from default(30)
+            bossKoolaid.Health = 100;
 
             enemyPoisonPacket = new Enemy(CreatePosition(picEnemyPoisonPacket), CreateCollider(picEnemyPoisonPacket, PADDING));
             enemyCheeto = new Enemy(CreatePosition(picEnemyCheeto), CreateCollider(picEnemyCheeto, PADDING));
@@ -191,12 +191,14 @@ namespace Fall2020_CSC403_Project {
             if (pausedTime == false)
             {
                 span = DateTime.Now - timeBegin;
+                countdownTimer.Start();
 
             }
             // if paused then the new beginning time is reset by elapsed time
             else if (pausedTime == true)
             {
                 timeBegin = DateTime.Now - elapsedTime;
+                countdownTimer.Stop();
             }
             // display time value
             string time = span.ToString(@"hh\:mm\:ss");
