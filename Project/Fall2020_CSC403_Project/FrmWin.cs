@@ -21,7 +21,7 @@ namespace Fall2020_CSC403_Project
         }
         public void StartMusic()
         {
-            WinAudio.Play();
+            WinAudio.PlayLooping();
         }
         public void StopMusic()
         {
