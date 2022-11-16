@@ -1,7 +1,7 @@
 Documentation for Team Squonk Fall 2022 Project
 
 FrmMenu.cs
-    - The FrmMenu.cs file adds the new main menu for the game
+    - The FrmMenu.cs file adds the new main menu for the game. It plays a cutscene first before showing the actual menu.
 
     METHODS
     1) quitBtn_Click(object sender, EventArgs e)
@@ -14,7 +14,9 @@ FrmMenu.cs
     
     3) helpBtn_Click(object sender, EventArgs e)
         - Triggers when the helpBtn on the main menu form is clicked. Its pops up the help screen. 
-
+        
+    4) skipBtn_Click(object sender, EventArgs e)
+        - Skips the cutscene and goes to the menu.
 Program.cs
     - When first starting up the application, the game now starts by loading up the FrmMenu() form instead of the FrmLevel() form
 
