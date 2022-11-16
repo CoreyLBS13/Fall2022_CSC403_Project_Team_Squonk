@@ -141,6 +141,8 @@ Character.cs
         - Uses original arrow key value to perform the first movement then compares position array values.
         - e.x If left key and position[0] is 1, move player left and up.
         - If no data was passed then reset move speed vector to 0.
+    3) Move2()
+        -moves character off screen
 
 FrmPause.cs
     
@@ -164,3 +166,12 @@ FrmPause.cs
     4) help_button_Click(object sender, EventArgs e)
         - Creates a new FrmHelp form
         - Shows the new FrmHelp form
+ FrmPBDeath.cs
+    -New windows form for death after colliding with pits
+    
+    METHODS
+    1) menuBtn_Click(object sender, EventArgs e)
+        - Triggers when the menuBtn on the death screen is clicked. It creates a new instance of the FrmMenu form and shows it then closes the FrmDeath form.
+    
+    2) quitBtn_Click(object sender, EventArgs e)
+        - Triggers when the quitBtn on the death screen is clicked. This closes the entire application
