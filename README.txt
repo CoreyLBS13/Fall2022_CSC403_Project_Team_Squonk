@@ -194,5 +194,6 @@ FrmLevel.cs
 FrmWin.cs
     - I built this to use as a winning screen once the player collide with the squonk.
     - I made the winning music(made by Corey) auto-played with opening this file. 
-   
 
+battlecharacters.cs
+    - modified the default health of all battlecharacters.
