@@ -25,6 +25,13 @@ Program.cs
 FrmLevel.cs
     - The map that the game takes place on.
     
+    OBJECTS
+    1) Potions
+        - potions were added in that resets the player to max health
+    2) Mushy
+        -mushy is a new hidden enemy that blocks a potion
+        -he is hidden by making the backgroud image the image of the enemy and the image is set as a block that is the same color as the background.
+    
     METHODS
     1) GetInstance(int flag)
         - The method is used to either open up a new, fresh version of the FrmLevel() form or reset the instance of the form if the game has ended, either by the player winning or dying in battle. 
